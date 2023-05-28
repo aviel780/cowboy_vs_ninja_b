@@ -33,6 +33,8 @@ void Team::attack(Team* enemy) {
                     minDistance = dist;
                     newLeader = fighter;
                 }
+                
+                
             }
         }
 
@@ -58,7 +60,8 @@ void Team::attack(Team* enemy) {
 
         if (!victim)
             break;
-
+        
+        
         for (Character* fighter : fighters) {
             if (fighter->isAlive()) {
                 Cowboy* cowboy = dynamic_cast<Cowboy*>(fighter);
@@ -90,14 +93,15 @@ int Team::stillAlive() const {
 }
 
 std::string Team::print() const {
-    // for (Character* fighter : fighters) {
-    //     fighter->print();
-    // }
-    return "";
+    std::string ans = "";
+    for (Character* fighter : fighters) {
+        ans += fighter->print();
+    }
+    return ans;
 }
 
 Team::~Team() {
-    // for (Character* fighter : fighters) {
-    //     delete fighter;
-    // }
+    for (Character* fighter : fighters) {
+        delete fighter;
+    }
 }

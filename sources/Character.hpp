@@ -35,21 +35,10 @@ public:
     bool capten_of_team() const;
     void set_capten_of_team();
     void setLocation(Point new_location);
-
-//here
-    virtual ~Character() = default; //1
+    virtual ~Character() = default; 
     int getHit() const;
     void setHit(int);
-    
-    
-    
-    void sort_hit_ascending_order(std::vector<Character*>& characters);
-    void sort_hit_descending_order(std::vector<Character*>& characters);
-    void sort_speed_ascending_order(std::vector<Character*>& characters);
-    static bool compare_to_hit_ascending(const Character* chara1, const Character* chara2);
-    static bool compare_to_hit_descending(const Character* chara1, const Character* chara2);
-    static bool compare_to_C_to_N(const Character* chara1, const Character* chara2);
-    static void sortCharacters(std::vector<Character*>& characters, SortOrder sortOrder);
+
 };
 
  }

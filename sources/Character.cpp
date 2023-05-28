@@ -12,9 +12,9 @@ Character::Character(const std::string name, int hitPoints, const Point location
     : name(name), hitPoints(hitPoints), location(location) {
         this->name = name;
         this->location = location;
-        this->hitPoints;
-        this->have_team;
-        this->is_capten;
+        // this->hitPoints;
+        // this->have_team;
+        // this->is_capten;
     }
 
 bool Character::isAlive() const {
@@ -66,7 +66,4 @@ void Character::set_capten_of_team(){
 void Character::setLocation(Point new_loc){
     this->location = new_loc;
 }
-
-
-
 

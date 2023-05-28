@@ -22,7 +22,7 @@ void SmartTeam::attack(SmartTeam* enemy) {
 
         for (Character* enemyFighter : enemy->fighters) {
             if (enemyFighter->isAlive()) {
-                double dist = leader->distance(*enemyFighter);
+                double dist = leader->distance(enemyFighter);
                 if (dist < minDistance) {
                     minDistance = dist;
                     victim = enemyFighter;

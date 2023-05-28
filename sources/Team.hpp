@@ -6,6 +6,7 @@
 #include "OldNinja.hpp"
 #include "TrainedNinja.hpp"
 #include "YoungNinja.hpp"
+#include "Cowboy.hpp"
 namespace ariel {
 class Team {
 private:

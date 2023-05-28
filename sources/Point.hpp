@@ -1,5 +1,6 @@
 #ifndef POINT_HPP
 #define POINT_HPP
+#include <string>
 
 namespace ariel {
 
